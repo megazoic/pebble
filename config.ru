@@ -2,7 +2,7 @@ require 'bundler'
 
 Bundler.require(:default)
 
-require './get_dec_azim'
+require './pebble'
 
 #require './test_env'
 

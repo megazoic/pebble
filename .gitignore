@@ -2,3 +2,4 @@ env_vars
 *.ods*
 .ruby-version
 test_env.rb
+formulae.txt
