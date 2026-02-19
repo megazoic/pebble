@@ -1,2 +1,4 @@
-config
+env_vars
 *.ods*
+.ruby-version
+test_env.rb

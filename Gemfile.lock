@@ -53,6 +53,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-22
+  arm64-darwin-25
 
 DEPENDENCIES
   json (~> 2.16.0)

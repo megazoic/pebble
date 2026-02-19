@@ -73,6 +73,14 @@ get '/' do
   'Solar Position Calculation Service'
 end
 get '/sun_posit' do
+  puts "Received Request with Params: #{params}\n\n"
+
+  # Expected params: lat, long, user (optional) and secret token
+  # test for required params
+  unless params['lat'] && params['long'] && params['secret'] == ENV['TOKEN_SECRET'] && !ENV['TOKEN_SECRET'].nil?
+    status 400
+    return json error: 'Missing required parameters or invalid secret token'
+  end
   latitude = params['lat'].to_f
   longitude = params['long'].to_f
   user = params['user'] || 'demo'
