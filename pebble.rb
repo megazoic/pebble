@@ -1,4 +1,4 @@
-require 'Date'
+require 'date'
 require 'sinatra'
 require 'sinatra/json'
 require 'json'
